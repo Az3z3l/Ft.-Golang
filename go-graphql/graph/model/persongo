@@ -1,0 +1,14 @@
+// package model
+
+// // Person : Model for person
+// type Person struct {
+// 	ID   int
+// 	Name string
+// 	Pet  Pet
+// }
+
+// // Pet : model of pets
+// type Pet struct {
+// 	ID   int
+// 	Name string
+// }
