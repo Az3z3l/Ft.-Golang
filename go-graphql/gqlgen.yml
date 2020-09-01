@@ -1,6 +1,6 @@
 # Where are all the schema files located? globs are supported eg  src/**/*.graphqls
 schema:
-  - graph/schema.graphql
+  - graph/*.graphql
 
 # Where should the generated server code go?
 exec:
@@ -13,12 +13,6 @@ exec:
 #   package: generated
 
 # Where should any generated models go?
-# models:
-#   Person:
-#     model: github.com/Az3z3l/Ft.-Golang/model.Person
-#   Pet:
-#     model: github.com/Az3z3l/Ft.-Golang/model.Pet
-
 model:
   filename: graph/model/gen.go
   package: model
@@ -48,15 +42,15 @@ autobind:
 # The first line in each type will be used as defaults for resolver arguments and
 # modelgen, the others will be allowed when binding to fields. Configure them to
 # your liking
-# models:
-#   ID:
-#     model:
-#       - github.com/99designs/gqlgen/graphql.ID
-#       - github.com/99designs/gqlgen/graphql.Int
-#       - github.com/99designs/gqlgen/graphql.Int64
-#       - github.com/99designs/gqlgen/graphql.Int32
-#   Int:
-#     model:
-#       - github.com/99designs/gqlgen/graphql.Int
-#       - github.com/99designs/gqlgen/graphql.Int64
-#       - github.com/99designs/gqlgen/graphql.Int32
+models:
+  ID:
+    model:
+      - github.com/99designs/gqlgen/graphql.ID
+      - github.com/99designs/gqlgen/graphql.Int
+      - github.com/99designs/gqlgen/graphql.Int64
+      - github.com/99designs/gqlgen/graphql.Int32
+  Int:
+    model:
+      - github.com/99designs/gqlgen/graphql.Int
+      - github.com/99designs/gqlgen/graphql.Int64
+      - github.com/99designs/gqlgen/graphql.Int32

@@ -12,3 +12,9 @@ type Pet struct {
 	ID   int    `json:"id"`
 	Name string `json:"name"`
 }
+
+type Users struct {
+	ID       string `json:"id"`
+	Uname    string `json:"uname"`
+	Password string `json:"password"`
+}

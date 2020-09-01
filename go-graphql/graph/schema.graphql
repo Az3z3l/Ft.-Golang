@@ -15,6 +15,12 @@ type Pet {
   name: String!
 }
 
+type users{
+  id: ID!
+  uname: String!
+  password: String!
+}
+
 type Query {
   person: [Person!]!
   pet: [Pet!]!

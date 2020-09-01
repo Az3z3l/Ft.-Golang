@@ -2,6 +2,7 @@ github.com/99designs/gqlgen v0.12.2 h1:aOdpsiCycFtCnAv8CAI1exnKrIDHMqtMzQoXeTziY
 github.com/99designs/gqlgen v0.12.2/go.mod h1:7zdGo6ry9u1YBp/qlb2uxSU5Mt2jQKLcBETQiKk+Bxo=
 github.com/Az3z3l/Ft.-Golang v0.0.0-20200901053940-6dd5d5389807 h1:l7IVh11BaXPke1lgNhj3mlaxBirv4KEv6thI1lLXJ+s=
 github.com/Az3z3l/Ft.-Golang v0.0.0-20200901065937-a204efc15e09 h1:MnPGXDtkzyDCWRqs+vp+EcAtWPTzLuZxbMaMlzRmpBg=
+github.com/Az3z3l/Ft.-Golang v0.0.0-20200901082908-222af07d17a8 h1:yDxU4Ec/371B1QNaoe4X2ZMd2E089CVFJu0OdDcmYkw=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/agnivade/levenshtein v1.0.1/go.mod h1:CURSv5d9Uaml+FovSIICkLbAUZ9S4RqaHDIsdSBg7lM=
 github.com/agnivade/levenshtein v1.0.3 h1:M5ZnqLOoZR8ygVq0FfkXsNOKzMCk0xRiow0R5+5VkQ0=
