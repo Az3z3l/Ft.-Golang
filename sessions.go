@@ -29,7 +29,10 @@ func login(w http.ResponseWriter, r *http.Request) {
 	session, _ := store.Get(r, "cookie-name")
 
 	session.Values["authenticated"] = true
+	session.Values["id"] = 12345
 	session.Save(r, w)
+
+	fmt.Fprintln(w, session.Values)
 }
 
 func logout(w http.ResponseWriter, r *http.Request) {
