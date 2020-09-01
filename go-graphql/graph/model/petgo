@@ -1,7 +1,0 @@
-// package model
-
-// // Pet : model of pets
-// type Pet struct {
-// 	ID   int
-// 	Name string
-// }

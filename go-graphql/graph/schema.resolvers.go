@@ -5,22 +5,38 @@ package graph
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/Az3z3l/Ft.-Golang/go-graphql/graph/generated"
 	"github.com/Az3z3l/Ft.-Golang/go-graphql/graph/model"
 )
 
 func (r *queryResolver) Person(ctx context.Context) ([]*model.Person, error) {
-	panic(fmt.Errorf("not implemented"))
+	// panic(fmt.Errorf("not implemented"))
+	var result []*model.Person
+	Adam := &model.Person{
+		ID:   1,
+		Name: "Adam",
+		Pet: &model.Pet{
+			ID:   1,
+			Name: "Stew",
+		},
+	}
+	result = append(result, Adam)
+	return result, nil
 }
 
 func (r *queryResolver) Pet(ctx context.Context) ([]*model.Pet, error) {
-	panic(fmt.Errorf("not implemented"))
+	var result []*model.Pet
+	Stew := &model.Pet{
+		ID:   1,
+		Name: "Stew",
+	}
+	result = append(result, Stew)
+	return result, nil
 }
 
 func (r *queryResolver) Hello(ctx context.Context) (string, error) {
-	panic(fmt.Errorf("not implemented"))
+	return "HEll0 W0R1d", nil
 }
 
 // Query returns generated.QueryResolver implementation.
