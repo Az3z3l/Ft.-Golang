@@ -41,7 +41,9 @@ func logout(w http.ResponseWriter, r *http.Request) {
 	session.Save(r, w)
 }
 
-func main() {
+// func main() {
+
+func mainf() {
 	http.HandleFunc("/secret", secret)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/logout", logout)
