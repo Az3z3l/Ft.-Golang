@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	graphqlClient := graphql.NewClient("http://127.0.0.1:1337/query")
+	graphqlClient := graphql.NewClient("http://127.0.0.1:5555/query")
 
 	req := graphql.NewRequest(`
 	query ppp($a: String! $b: String!){

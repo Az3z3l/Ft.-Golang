@@ -10,14 +10,13 @@ import (
 func main() {
 	graphqlClient := graphql.NewClient("http://127.0.0.1:5555/query")
 	req := graphql.NewRequest(`
-	mutation register($in:register_input){
-		register(input:$in)
+	query register($in:login_input){
+		login(input:$in)
 	}
 	`)
 	data := map[string]string{
-		"email":    "Dog",
-		"username": "Cat",
-		"password": "Cow",
+		"username": "damn",
+		"password": "damn",
 	}
 	req.Var("in", data)
 	fmt.Println(req)
